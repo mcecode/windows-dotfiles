@@ -47,9 +47,15 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
    git --git-dir="%USERPROFILE%\.dotfiles" --work-tree="%USERPROFILE%" checkout
    ```
 
-6. Turn on Developer mode in Windows Settings > Update & Security > For developers. This will allow you to run `update-extensions.ps1` in the next step.
-7. Run `%USERPROFILE%\.vscode\update-extensions.ps1`. This will install the VSC extensions listed in `%USERPROFILE%\.vscode\extensions.txt`.
-8. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
+6. Set `dotfiles status` to hide untracked files:
+
+   ```console
+   dotfiles config --local status.showUntrackedFiles no
+   ```
+
+7. Turn on Developer mode in Windows Settings > Update & Security > For developers. This will allow you to run `update-extensions.ps1` in the next step.
+8. Run `%USERPROFILE%\.vscode\update-extensions.ps1`. This will install the VSC extensions listed in `%USERPROFILE%\.vscode\extensions.txt`.
+9. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
 
 ## Syncing the dotfiles
 
