@@ -18,7 +18,7 @@ GIT_PS1_SHOWUPSTREAM="auto verbose"
 
 # Pretty list
 alias pls="ls -AF --group-directories-first --color=always"
-alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"
+alias dotfiles="git --git-dir=\"$HOME/.dotfiles\" --work-tree=\"$HOME\""
 
 #==================================================
 # Functions

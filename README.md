@@ -29,22 +29,22 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
    For Git Bash,
 
    ```console
-   git clone --bare https://github.com/mcecode/windows-dotfiles.git $HOME/.dotfiles
-   git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
+   git clone --bare https://github.com/mcecode/windows-dotfiles.git "$HOME/.dotfiles"
+   git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" checkout
    ```
 
    For PowerShell,
 
    ```console
-   git clone --bare https://github.com/mcecode/windows-dotfiles.git $Env:USERPROFILE\.dotfiles
-   git --git-dir=$Env:USERPROFILE\.dotfiles --work-tree=$Env:USERPROFILE checkout
+   git clone --bare https://github.com/mcecode/windows-dotfiles.git "$Env:USERPROFILE\.dotfiles"
+   git --git-dir="$Env:USERPROFILE\.dotfiles" --work-tree="$Env:USERPROFILE" checkout
    ```
 
    For Command Prompt,
 
    ```console
-   git clone --bare https://github.com/mcecode/windows-dotfiles.git %USERPROFILE%\.dotfiles
-   git --git-dir=%USERPROFILE%\.dotfiles --work-tree=%USERPROFILE% checkout
+   git clone --bare https://github.com/mcecode/windows-dotfiles.git "%USERPROFILE%\.dotfiles"
+   git --git-dir="%USERPROFILE%\.dotfiles" --work-tree="%USERPROFILE%" checkout
    ```
 
 6. Turn on Developer mode in Windows Settings > Update & Security > For developers. This will allow you to run `update-extensions.ps1` in the next step.
