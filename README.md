@@ -17,7 +17,7 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
 3. Install [Fira Code](https://github.com/tonsky/FiraCode/releases). ([Instructions](https://github.com/tonsky/FiraCode/wiki/Installing#windows))
 4. Use [Noto Emoji](https://github.com/googlefonts/noto-emoji/releases) to support emojis on Git Bash.
 
-   You can follow [these instructions](https://github.com/mintty/mintty/wiki/Tips#installing-emoji-resources), but long story short, put the contents of [`noto-emoji/png/128`](https://github.com/googlefonts/noto-emoji/tree/main/png/128) in any of the following directories:
+   You can follow [these instructions](https://github.com/mintty/mintty/wiki/Tips#installing-emoji-resources), but long story short, use [this link](https://downgit.github.io/#/home?url=https://github.com/googlefonts/noto-emoji/tree/main/png/128) from [DownGit](https://github.com/MinhasKamal/DownGit) to download the contents of [`noto-emoji/png/128`](https://github.com/googlefonts/noto-emoji/tree/main/png/128) and put them in any of the following directories:
 
    - `%USERPROFILE%\.mintty\emojis\noto`
    - `%USERPROFILE%\.config\mintty\emojis\noto`
