@@ -1,0 +1,6 @@
+{
+  "VS Code user snippet": {
+    "prefix": "snippet",
+    "body": "\"$1\": {\n\t\"prefix\": \"$2\",\n\t\"body\": $0\n},"
+  }
+}

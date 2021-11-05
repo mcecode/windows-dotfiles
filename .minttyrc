@@ -1,0 +1,40 @@
+# Window size
+Columns=100
+Rows=30
+
+# Theme
+Term=xterm-256color
+BackgroundColour=#101010
+ForegroundColour=#9e9e9e
+CursorColour=#eeeeee
+Black=#212121
+BoldBlack=#424242
+Red=#f44336
+BoldRed=#ff5722
+Green=#4caf50
+BoldGreen=#8bc34a
+Yellow=#ffc107
+BoldYellow=#ffeb3b
+Blue=#2196f3
+BoldBlue=#03a9f4
+Magenta=#9c27b0
+BoldMagenta=#c045d6
+Cyan=#27b089
+BoldCyan=#4cd9b1
+White=#c8c8c8
+BoldWhite=#fafafa
+
+# Font
+Font=Fira Code
+FontHeight=11
+FontWeight=500
+LigaturesSupport=1
+Emojis=noto
+
+# Cursor
+CursorType=block
+CursorBlinks=no
+
+# Others
+Scrollbar=none
+BellType=0

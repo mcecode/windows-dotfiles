@@ -1,0 +1,113 @@
+{
+  // JSON-LD
+  "Basic JSON-LD": {
+    "prefix": "jld", // json ld
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\t\"@context\": \"https://schema.org\",",
+      "\t\"@type\": \"$1\",",
+      "\t\"@id\": \"$2\",",
+      "\t\"name\": \"$3\",",
+      "\t\"url\": \"$4\",",
+      "\t\"$0\": \"\",",
+      "}",
+      "</script>"
+    ]
+  },
+  "JSON-LD with @graph": {
+    "prefix": "jldg", // json ld graph
+    "body": [
+      "<script type=\"application/ld+json\">",
+      "{",
+      "\t\"@context\": \"https://schema.org\",",
+      "\t\"@graph\": [",
+      "\t\t{",
+      "\t\t\t\"@type\": \"\",",
+      "\t\t\t\"\": \"\",",
+      "\t\t},",
+      "\t\t{",
+      "\t\t\t\"@type\": \"\",",
+      "\t\t\t\"\": \"\",",
+      "\t\t}",
+      "\t]",
+      "}$0",
+      "</script>"
+    ]
+  },
+
+  // PHP tags
+  "PHP echo shorthand": {
+    "prefix": "$echo",
+    "body": "<?= $0 ?>"
+  },
+  "PHP opening tag": {
+    "prefix": "$open",
+    "body": "<?php\n\n$0"
+  },
+  "PHP single-line tags": {
+    "prefix": "$short",
+    "body": "<?php $0 ?>"
+  },
+  "PHP multi-line tags": {
+    "prefix": "$long",
+    "body": "<?php\n\t$0\n?>"
+  },
+  "PHP strict opening tag": {
+    "prefix": "$strictopen",
+    "body": "<?php\n\ndeclare (strict_types=1);\n\n$0"
+  },
+  "PHP strict single-line tags": {
+    "prefix": "$strictshort",
+    "body": "<?php declare (strict_types=1); ?>"
+  },
+  "PHP strict multi-line tags": {
+    "prefix": "$strictlong",
+    "body": "<?php\n\ndeclare (strict_types=1);\n\n$0\n\n?>"
+  },
+
+  // PHP loops
+  "PHP while loop": {
+    "prefix": "$while",
+    "body": "<?php while ($1): ?>\n\t$0\n<?php endwhile; ?>"
+  },
+  "PHP for loop": {
+    "prefix": "$for",
+    "body": "<?php for (\\$i = 0; \\$i < $1; \\$i++): ?>\n\t$0\n<?php endfor; ?>"
+  },
+  "PHP foreach loop": {
+    "prefix": "$each",
+    "body": "<?php foreach ($$array as $$key => $$value): ?>\n\t$0\n<?php endforeach; ?>"
+  },
+
+  // PHP conditionals
+  "PHP if statement": {
+    "prefix": "$if",
+    "body": "<?php if ($1): ?>\n\t$0\n<?php endif; ?>"
+  },
+  "PHP else statement": {
+    "prefix": "$else",
+    "body": "<?php else: ?>"
+  },
+  "PHP else-if statement": {
+    "prefix": "$elif",
+    "body": "<?php elseif ($0): ?>"
+  },
+  "PHP switch statement": {
+    "prefix": "$switch",
+    "body": [
+      "<?php switch ($1): ?>\n",
+      "<?php case $2: ?>",
+      "\t$3",
+      "<?php break; ?>$0\n",
+      "<?php default: ?>",
+      "\t$4",
+      "<?php break; ?>\n",
+      "<?php endswitch; ?>"
+    ]
+  },
+  "PHP case statement": {
+    "prefix": "$case",
+    "body": "<?php case $1: ?>\n\t$2\n<?php break; ?>"
+  }
+}

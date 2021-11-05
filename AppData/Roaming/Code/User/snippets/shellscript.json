@@ -1,0 +1,12 @@
+{
+	// TODO: Add control structures snippets.
+
+	"Shell shebang": {
+		"prefix": "sh",
+		"body": "#!/bin/sh"
+	},
+	"Bash shebang": {
+		"prefix": "bash",
+		"body": "#!/bin/bash"
+	}
+}

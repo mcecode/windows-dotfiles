@@ -1,0 +1,380 @@
+{
+  //==================================================
+  // General built-ins
+  //==================================================
+
+  // Telemetry
+  "telemetry.telemetryLevel": "off",
+  // Window
+  "window.menuBarVisibility": "toggle",
+  "window.dialogStyle": "custom",
+  "window.title": "${dirty}${folderName}${separator}${activeFolderShort}${separator}${activeEditorShort}",
+  "window.titleSeparator": " | ",
+  // Explorer
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": "focusNoScroll",
+  // Editor
+  "editor.colorDecorators": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss05', 'ss07', 'zero'",
+  "editor.fontWeight": "500",
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 120,
+  "editor.columnSelection": false,
+  "editor.tabCompletion": "off",
+  "editor.quickSuggestionsDelay": 0,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggestSelection": "first",
+  "editor.suggest.insertMode": "insert",
+  "editor.snippetSuggestions": "top",
+  // Workbench
+  "workbench.list.smoothScrolling": true,
+  "workbench.panel.opensMaximized": "never",
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.enableExperiments": false,
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Dark+ Material",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.colorCustomizations": {
+    "[Dark+ Material]": {
+      "editor.snippetTabstopHighlightBackground": "#7575754d"
+    }
+  },
+  // Files
+  "files.hotExit": "onExitAndWindowClose",
+  "files.encoding": "utf8",
+  "files.autoGuessEncoding": true,
+  "files.eol": "\n",
+  "files.associations": {
+    ".minttyrc": "properties"
+  },
+  // Terminal
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.localEchoLatencyThreshold": -1,
+  "terminal.integrated.tabs.enabled": false,
+  // Bread Crumbs
+  "breadcrumbs.enabled": false,
+  // Search
+  "search.quickOpen.includeHistory": false,
+  // Extensions
+  "extensions.ignoreRecommendations": true,
+  // Security
+  "security.workspace.trust.enabled": false,
+
+  //==================================================
+  // Language specific built-ins and extensions
+  //==================================================
+
+  // PHP
+  "intelephense.telemetry.enabled": false,
+  "intelephense.trace.server": "verbose",
+  "intelephense.completion.insertUseDeclaration": false,
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  // JavaScript/Typescript
+  "js/ts.implicitProjectConfig.checkJs": true,
+  // JavaScript
+  "javascript.suggest.autoImports": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  // "javascript.inlayHints.enumMemberValues.enabled": true,
+  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "javascript.inlayHints.parameterNames.enabled": "all",
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "javascript.inlayHints.variableTypes.enabled": true,
+  "[javascript]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  // Typescript
+  "typescript.suggest.autoImports": false,
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "typescript.preferences.includePackageJsonAutoImports": "off",
+  // "typescript.inlayHints.enumMemberValues.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "typescript.inlayHints.parameterNames.enabled": "all",
+  // "typescript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "typescript.inlayHints.variableTypes.enabled": true,
+  "[typescript]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+  // SCSS
+  "scss.implicitlyLabel": "(implicit)",
+  "scss.scannerExclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/.history/**",
+    "**/CVS/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**"
+  ],
+  // Markdown
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown.preview.typographer": true,
+  "markdown.preview.fontSize": 16,
+  "markdown.extension.italic.indicator": "_",
+  "markdown.extension.toc.updateOnSave": false,
+  "markdown.extension.tableFormatter.enabled": false,
+  "markdown.extension.list.indentationSize": "inherit",
+  "markdown.extension.orderedList.autoRenumber": false,
+  "markdown.extension.print.theme": "dark",
+  "markdown.extension.print.absoluteImgPath": false,
+  "markdown.extension.math.enabled": false,
+  "markdown.math.enabled": false,
+  "mdmath.theme": "publication",
+  "mdmath.katexoptions": {
+    "errorColor": "#ff5722"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 100,
+    "editor.quickSuggestions": {
+      "other": true
+    }
+  },
+  "markdownlint.config": {
+    // For settings explanations, see:
+    // https://github.com/mcecode/standards/blob/main/code/tools/node.js/markdownlint.md
+    "MD003": {
+      "style": "atx"
+    },
+    "MD004": {
+      "style": "dash"
+    },
+    "MD009": {
+      "br_spaces": 0
+    },
+    "MD013": false,
+    "MD024": {
+      "siblings_only": true
+    },
+    "MD025": {
+      "front_matter_title": ""
+    },
+    "MD029": {
+      "style": "ordered"
+    },
+    "MD033": false,
+    "MD035": {
+      "style": "---"
+    },
+    "MD041": {
+      "front_matter_title": ""
+    },
+    "MD048": {
+      "style": "backtick"
+    }
+  },
+  // SVG
+  "svg.completion.emmet": true,
+  "svg.completion.showAdvanced": true,
+  "svg.preview.mode": "svg",
+  "svg.preview.background": "custom",
+  "svg.preview.backgroundCustom": "#e5e5e5",
+  "svg.preview.backgroundSaveTo": "NoSave",
+  "svg.preview.toolbarSize": "large",
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  // Shell Script
+  "[shellscript]": {
+    "files.eol": "\n",
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
+
+  //==================================================
+  // Extensions
+  //==================================================
+
+  // Grammarly
+  "grammarly.autoActivate": false,
+  "grammarly.domain": "casual",
+  "grammarly.showExamples": true,
+  "grammarly.showUsernameInStatusBar": false,
+  "grammarly.diagnostics": {
+    "[markdown]": {
+      "ignore": ["inlineCode", "code", "html"]
+    }
+  },
+  "grammarly.userWords": [
+    "polyfilled",
+    "unpolyfilled",
+
+    "transpiled",
+    "untranspiled",
+
+    "formatter",
+    "formatters",
+
+    "linters",
+    "lints",
+
+    "webpack",
+    "preconnect",
+    "typometric",
+    "mcecode"
+  ],
+  // Better Comments
+  "better-comments.tags": [
+    {
+      // Example:
+      // TODO: Be a better dev
+      "tag": "TODO:",
+      "color": "#ff8c00",
+      "backgroundColor": "transparent",
+      "strikethrough": false,
+      "underline": false,
+      "bold": false,
+      "italic": false
+    }
+  ],
+  // Emoji Sense
+  "emojisense.showOnColon": false,
+  "emojisense.languages": {
+    "markdown": true,
+    "scminput": true,
+    "git-commit": true,
+    "plaintext": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "html": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "javascript": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    },
+    "php": {
+      "markupCompletionsEnabled": false,
+      "emojiDecoratorsEnabled": false
+    }
+  },
+  // Colorize
+  "colorize.enable_search_variables": false,
+  "colorize.colorized_variables": ["CSS", "SASS"],
+  "colorize.languages": ["css", "scss", "xml", "svg", "json"],
+  "colorize.exclude": [
+    "**/.git/**",
+    "**/.svn/**",
+    "**/.hg/**",
+    "**/.history/**",
+    "**/CVS/**",
+    "**/tests/**",
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**"
+  ],
+  // Bracket Pair Colorizer 2
+  "bracket-pair-colorizer-2.excludedLanguages": [
+    "plaintext",
+    "markdown",
+    "html"
+  ],
+  "bracket-pair-colorizer-2.colors": ["#ff57e8", "#57ff57", "#57fff2"],
+  "bracket-pair-colorizer-2.scopeLineCSS": [
+    "borderStyle : solid",
+    "borderWidth : 3px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  // Auto Rename Tag
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "vue",
+    "erb"
+  ],
+  // Auto Close Tag
+  "auto-close-tag.enableAutoCloseSelfClosingTag": false,
+  "auto-close-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "vue",
+    "erb"
+  ],
+  // Highlight Matching Tag
+  "highlight-matching-tag.showPath": false,
+  "highlight-matching-tag.showRuler": false,
+  "highlight-matching-tag.highlightSelfClosing": true,
+  "highlight-matching-tag.highlightFromContent": true,
+  "highlight-matching-tag.styles": {
+    "opening": {
+      "full": {
+        "surround": "#ff57e8"
+      }
+    }
+  },
+  // Prettier
+  "prettier.trailingComma": "none",
+  // Table Formatter
+  "tableformatter.common.centerAlignedHeader": false,
+  "tableformatter.markdown.tableEdgesType": "Normal",
+  // ESLint
+  "eslint.alwaysShowStatus": true,
+  // Alex
+  "alex-linter.noBinary": true,
+  "alex-linter.strategy": "user",
+
+  //==================================================
+  // Others
+  //==================================================
+
+  // Settings to set for workspaces; not including formatting settings in the
+  // global settings help prevent unintended formatting when contributing to
+  // projects with different formatting preferences.
+  // "terminal.integrated.cwd": "",
+  // "editor.formatOnSave": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.markdownlint": true
+  // },
+  // "files.trimTrailingWhitespace": true,
+  // "files.trimFinalNewlines": true,
+  // "files.insertFinalNewline": true,
+
+  // This is the default option for this setting, it is here to act as a guard
+  // when VS Code adds and removes the keybinding toggeable options below it.
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.activityBar.visible": false
+}

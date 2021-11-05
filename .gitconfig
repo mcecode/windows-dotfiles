@@ -1,0 +1,14 @@
+[core]
+  excludesfile = ~/.config/git/global.gitignore
+
+[alias]
+  # Last commit
+  lc = show -s --format='%Cred%h%Creset - %s'
+  # Short pretty log
+  spl = log --graph --format='%Cred%h%Creset - %s %C(yellow)%D%Creset'
+  # Long pretty log
+  lpl = log --graph \
+    --format='%Cred%H %Cgreen(%ci) %C(bold magenta)%G?%n%n%C(bold blue)<%an>%Creset [%s] %C(yellow)%D%Creset%n%n%b%n'
+
+[include]
+  path = ~/.config/local/.gitconfig

@@ -1,0 +1,78 @@
+{
+  // Keyframes
+  "From-to keyframes": {
+    "prefix": "keyfft", // keyframes from to
+    "body": [
+      "@keyframes ${1:animation-name} {",
+      "\tfrom {",
+      "\t\t$2",
+      "\t}",
+      "\tto {",
+      "\t\t$3",
+      "\t}",
+      "}"
+    ]
+  },
+  "Percentage keyframes": {
+    "prefix": "keyfp", // keyframes percentage
+    "body": [
+      "@keyframes ${1:animation-name} {",
+      "\t0% {",
+      "\t\t$2",
+      "\t}\n",
+      "\t$0\n",
+      "\t100% {",
+      "\t\t$3",
+      "\t}",
+      "}"
+    ]
+  },
+
+  // Media queries
+  "Min-width media query": {
+    "prefix": "mediamw", // media min width
+    "body": "@media (min-width: $1em) {\n\t$0\n}"
+  },
+  "Prefers reduced motion media query": {
+    "prefix": "mediaprm", // media prefers reduced motion
+    "body": [
+      "@media (prefers-reduced-motion: reduce) {",
+      "\t${1:*,\n\t::before,\n\t::after {\n\t\tanimation-delay: -1ms !important;\n\t\tanimation-duration: 1ms !important;\n\t\tanimation-iteration-count: 1 !important;\n\t\tbackground-attachment: initial !important;\n\t\tscroll-behavior: auto !important;\n\t\ttransition-delay: 0s !important;\n\t\ttransition-duration: 0s !important;\n\t\\}}",
+      "}"
+    ]
+  },
+  "Prefers color scheme media query": {
+    "prefix": "mediapcs", // media prefers color scheme
+    "body": "@media (prefers-color-scheme: ${1|light,dark|}) {\n\t$0\n}"
+  },
+
+  // Others
+  "Universal reset": {
+    "prefix": "reset",
+    "body": [
+      "*,",
+      "::before,",
+      "::after {",
+      "\tmargin: 0;",
+      "\tpadding: 0;",
+      "\tbox-sizing: border-box;",
+      "}"
+    ]
+  },
+  "Feature query": {
+    "prefix": "supports",
+    "body": "@supports ($1) {\n\t$0\n}"
+  },
+  "Font face": {
+    "prefix": "font",
+    "body": [
+      "@font-face {",
+      "\tfont-family: \"$1\";",
+      "\tfont-style: ${2|normal,italic,oblique|};",
+      "\tfont-weight: ${3|100,200,300,400,500,600,700,800,900|};",
+      "\tfont-display: ${4:swap};",
+      "\tsrc: ${0:local(),\n\t\turl() format()};",
+      "}"
+    ]
+  }
+}

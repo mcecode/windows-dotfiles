@@ -1,0 +1,26 @@
+{
+  "Single-line todo comment": {
+    "prefix": "todo",
+    "body": "$LINE_COMMENT TODO: ",
+    "scope": "javascript,json,jsonc,php,scss,shellscript,tex,latex,powershell"
+  },
+  "Multi-line todo comment": {
+    "prefix": "todo",
+    "body": "$BLOCK_COMMENT_START TODO: $0 $BLOCK_COMMENT_END",
+    "scope": "css,html,markdown"
+  },
+  "Single-line header comment": {
+    "prefix": "header",
+    "body": [
+      "$LINE_COMMENT==================================================",
+      "$LINE_COMMENT $0",
+      "$LINE_COMMENT=================================================="
+    ],
+    "scope": "javascript,json,jsonc,php,scss,shellscript,tex,latex,powershell"
+  },
+  "Multi-line header comment": {
+    "prefix": "header",
+    "body": "$BLOCK_COMMENT_START\n\t$0\n$BLOCK_COMMENT_END",
+    "scope": "css,html,markdown"
+  }
+}

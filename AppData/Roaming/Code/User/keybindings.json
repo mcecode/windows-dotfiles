@@ -1,0 +1,494 @@
+[
+  //==================================================
+  // Activity, side, and status bars
+  //==================================================
+
+  // Toggle activity bar visibility
+  {
+    "key": "shift+alt+v",
+    "command": "workbench.action.toggleActivityBarVisibility"
+  },
+  // Toggle sidebar visibility
+  {
+    "key": "shift+alt+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  // Toggle status bar visibility
+  {
+    "key": "shift+alt+g",
+    "command": "workbench.action.toggleStatusbarVisibility"
+  },
+
+  //==================================================
+  // Explorer
+  //==================================================
+
+  // Create new folder inside the focused folder
+  {
+    "key": "ctrl+alt+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  // Create a new file inside the focused folder
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  // Open files while maintaining focus on explorer
+  {
+    "key": "ctrl+o",
+    "command": "list.selectAndPreserveFocus",
+    "when": "explorerViewletFocus"
+  },
+
+  //==================================================
+  // Editor
+  //==================================================
+
+  // Select next match
+  {
+    "key": "shift+alt+n",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  // Select previous match
+  {
+    "key": "shift+alt+p",
+    "command": "editor.action.addSelectionToPreviousFindMatch",
+    "when": "editorFocus"
+  },
+  // Delete a whole line
+  {
+    "key": "shift+delete",
+    "command": "editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+delete",
+    "command": "-editor.action.clipboardCutAction",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+k",
+    "command": "-editor.action.deleteLines",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  // Jump to matching HTML tag
+  {
+    "key": "alt+k shift+,",
+    "command": "highlight-matching-tag.jumpToMatchingTag",
+    "when": "editorFocus"
+  },
+  // Select contents of HTML tags
+  {
+    "key": "alt+k shift+.",
+    "command": "highlight-matching-tag.selectPairContents",
+    "when": "editorFocus"
+  },
+  // Remove unneeded suggest keybinding
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  // Remove tab autocompletion
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && textInputFocus"
+  },
+
+  //==================================================
+  // Panel and terminal
+  //==================================================
+
+  // Dock panel bottom
+  {
+    "key": "ctrl+shift+down",
+    "command": "workbench.action.positionPanelBottom",
+    "when": "terminalFocus"
+  },
+  // Dock panel right
+  {
+    "key": "ctrl+shift+right",
+    "command": "workbench.action.positionPanelRight",
+    "when": "terminalFocus"
+  },
+  // Dock panel left
+  {
+    "key": "ctrl+shift+left",
+    "command": "workbench.action.positionPanelLeft",
+    "when": "terminalFocus"
+  },
+  // Increase panel size when docked bottom
+  {
+    "key": "shift+alt+up",
+    "command": "workbench.action.terminal.resizePaneUp",
+    "when": "terminalFocus"
+  },
+  // Decrease panel size when docked bottom
+  {
+    "key": "shift+alt+down",
+    "command": "workbench.action.terminal.resizePaneDown",
+    "when": "terminalFocus"
+  },
+  // Increase panel size when docked right/left
+  {
+    "key": "shift+alt+left",
+    "command": "workbench.action.terminal.resizePaneLeft",
+    "when": "terminalFocus"
+  },
+  // Decrease panel size when docked right/left
+  {
+    "key": "shift+alt+right",
+    "command": "workbench.action.terminal.resizePaneRight",
+    "when": "terminalFocus"
+  },
+  // Toggle between maximized and regular panel size
+  {
+    "key": "ctrl+alt+m",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  // Rename current terminal instance
+  {
+    "key": "ctrl+alt+r",
+    "command": "workbench.action.terminal.rename",
+    "when": "terminalFocus"
+  },
+  // Kill current terminal instance
+  {
+    "key": "ctrl+w",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  // Split terminal
+  {
+    "key": "ctrl+shift+up",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+5",
+    "command": "-workbench.action.terminal.split",
+    "when": "terminalFocus"
+  },
+  // Focus on next teriminal instance
+  {
+    "key": "ctrl+tab",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  // Focus on previous terminal instance
+  {
+    "key": "ctrl+shift+tab",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  // Focus on specific terminal instance 1-9
+  {
+    "key": "ctrl+alt+1",
+    "command": "workbench.action.terminal.focusAtIndex1",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+2",
+    "command": "workbench.action.terminal.focusAtIndex2",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+3",
+    "command": "workbench.action.terminal.focusAtIndex3",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+4",
+    "command": "workbench.action.terminal.focusAtIndex4",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+5",
+    "command": "workbench.action.terminal.focusAtIndex5",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+6",
+    "command": "workbench.action.terminal.focusAtIndex6",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+7",
+    "command": "workbench.action.terminal.focusAtIndex7",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+8",
+    "command": "workbench.action.terminal.focusAtIndex8",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+alt+9",
+    "command": "workbench.action.terminal.focusAtIndex9",
+    "when": "terminalFocus"
+  },
+
+  //==================================================
+  // Settings
+  //==================================================
+
+  // Show default settings JSON file
+  {
+    "key": "alt+k ctrl+,",
+    "command": "workbench.action.openRawDefaultSettings"
+  },
+
+  //==================================================
+  // Keybindings
+  //==================================================
+
+  // Open default keybindings JSON file
+  {
+    "key": "alt+k shift+d",
+    "command": "workbench.action.openDefaultKeybindingsFile"
+  },
+  // Open global/user keybindings JSON file
+  {
+    "key": "alt+k shift+g",
+    "command": "workbench.action.openGlobalKeybindingsFile"
+  },
+  // Open keybindings GUI
+  {
+    "key": "alt+k shift+s",
+    "command": "workbench.action.openGlobalKeybindings"
+  },
+  {
+    "key": "ctrl+k ctrl+s",
+    "command": "-workbench.action.openGlobalKeybindings"
+  },
+  // Show default keybindings in keybindings GUI
+  {
+    "key": "ctrl+d",
+    "command": "keybindings.editor.showDefaultKeybindings",
+    "when": "inKeybindings"
+  },
+  // Show user keybindings in keybindings GUI
+  {
+    "key": "ctrl+u",
+    "command": "keybindings.editor.showUserKeybindings",
+    "when": "inKeybindings"
+  },
+  // Copy command id in keybindings GUI
+  {
+    "key": "alt+c",
+    "command": "keybindings.editor.copyCommandKeybindingEntry",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  // Show same commands in keybindings GUI
+  {
+    "key": "ctrl+k ctrl+c",
+    "command": "keybindings.editor.showConflicts",
+    "when": "inKeybindings && keybindingFocus"
+  },
+  // Remove unneded reference
+  {
+    "key": "ctrl+k ctrl+r",
+    "command": "-workbench.action.keybindingsReference"
+  },
+
+  //==================================================
+  // Workspaces
+  //==================================================
+
+  // Save the workspace as a '.code-workspace' file
+  {
+    "key": "shift+alt+q",
+    "command": "workbench.action.saveWorkspaceAs"
+  },
+  // Open workspace
+  {
+    "key": "shift+alt+o",
+    "command": "workbench.action.openWorkspace"
+  },
+  // Open workspace settings
+  {
+    "key": "shift+alt+w",
+    "command": "workbench.action.openWorkspaceSettingsFile"
+  },
+  // Add folder to workspace
+  {
+    "key": "shift+alt+j",
+    "command": "workbench.action.addRootFolder"
+  },
+  // Remove folder from workspace
+  {
+    "key": "shift+alt+r",
+    "command": "workbench.action.removeRootFolder"
+  },
+
+  //==================================================
+  // Refactoring
+  //==================================================
+
+  // Discard symbol rename
+  {
+    "key": "shift+delete",
+    "command": "refactorPreview.discard",
+    "when": "refactorPreview.enabled && refactorPreview.enabled && refactorPreview.hasCheckedChanges && focusedView == 'refactorPreview'"
+  },
+
+  //==================================================
+  // Zoom
+  //==================================================
+
+  // Zoom in on image preview
+  {
+    "key": "ctrl+shift+=",
+    "command": "imagePreview.zoomIn"
+  },
+  {
+    "key": "ctrl+shift+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  // Zoom out on image preview
+  {
+    "key": "ctrl+shift+-",
+    "command": "imagePreview.zoomOut"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  // Remove unneeded and easily pressed zoom keybindings
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "ctrl+=",
+    "command": "-workbench.action.zoomIn"
+  },
+
+  //==================================================
+  // Markdown
+  //==================================================
+
+  // Insert task list
+  {
+    "key": "ctrl+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'",
+    "args": { "snippet": "- [ ] $0" }
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  // Remove unneeded Markdown+Math keybindings
+  {
+    "key": "ctrl+k ,",
+    "command": "-extension.saveToHtml",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k t",
+    "command": "-extension.insertToc",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k .",
+    "command": "-extension.clipToHtml",
+    "when": "editorTextFocus"
+  },
+
+  //==================================================
+  // SVG
+  //==================================================
+
+  // Show SVG file as an image
+  {
+    "key": "ctrl+k v",
+    "command": "_svg.showSvg",
+    "when": "!notebookEditorFocused && editorLangId == 'svg'"
+  },
+  // Minify SVG file
+  {
+    "key": "shift+alt+m",
+    "command": "_svg.minifySvg",
+    "when": "editorTextFocus && !editorReadonly && editorLangId == 'svg'"
+  },
+
+  //==================================================
+  // Emoji Sense
+  //==================================================
+
+  // Insert emojis as text in editor
+  {
+    "key": "ctrl+alt+i",
+    "command": "emojisense.quickEmojitext",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-emojisense.quickEmojitext",
+    "when": "editorTextFocus"
+  },
+  // Insert emojis as text in terminal
+  {
+    "key": "ctrl+alt+i",
+    "command": "emojisense.quickEmojitextTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "-emojisense.quickEmojitextTerminal",
+    "when": "terminalFocus"
+  },
+  // Insert emojis as unicode in editor
+  {
+    "key": "ctrl+alt+e",
+    "command": "emojisense.quickEmoji",
+    "when": "editorTextFocus"
+  },
+  // Insert emojis as unicode in terminal
+  {
+    "key": "ctrl+alt+e",
+    "command": "emojisense.quickEmojiTerminal",
+    "when": "terminalFocus"
+  },
+  // Remove redundant keybinding which conflicts with 'markdown-all-in-one'
+  {
+    "key": "ctrl+i",
+    "command": "-emojisense.quickEmoji",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-emojisense.quickEmojiTerminal",
+    "when": "terminalFocus"
+  },
+
+  //==================================================
+  // Other removed keybindings
+  //==================================================
+
+  // Remove dangerous window closing
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  // Remove unneeded keybinding that conflicts with 'pandoc-markdown-preview'
+  {
+    "key": "ctrl+shift+r",
+    "command": "-editor.action.refactor",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  }
+]

@@ -1,0 +1,63 @@
+{
+  // PHP 8
+  "Match expression": {
+    "prefix": "match",
+    "body": "match ($1) {\n\t$2 => $0,\n};"
+  },
+
+  // Functions
+  "Function": {
+    "prefix": "func", // function
+    "body": "function ${1:name}(${2:Type $$params}): ${3:void}\n{\n\t$0\n}"
+  },
+  "Arrow function": {
+    "prefix": "fn", // function
+    "body": "fn (${1:Type $$params}): ${2:void} => $0"
+  },
+  "IIFE": {
+    "prefix": "iife",
+    "body": "(function () {\n\t$0\n})();"
+  },
+
+  // Classes
+  "Self": {
+    "prefix": "self",
+    "body": "self::"
+  },
+  "Constant": {
+    "prefix": "const",
+    "body": "${1|public,protected,private|} const ${2:NAME} = $0;"
+  },
+  "Property": {
+    "prefix": "prop", // property
+    "body": "${1|public,protected,private,public static,protected static,private static|} ${2:Type} $${3:name} = ${4:null};"
+  },
+  "Method": {
+    "prefix": "meth", // method
+    "body": [
+      "${1|public,protected,private,public static,protected static,private static|} function ${2:name}(${3:Type $$params}): ${4:void}\n{\n\t$0\n}"
+    ]
+  },
+  // TODO: Add magic methods snippets.
+
+  // Helpers
+  "Extended var dump": {
+    "prefix": "dump",
+    "body": [
+      "echo '<pre style=\"font-family: Fira Code; font-size: 18px\">';",
+      "var_dump($0);",
+      "echo '</pre>';",
+      "exit;"
+    ]
+  },
+  "Echo HTML break tag": {
+    "prefix": "ebr", // echo br
+    "body": "echo '<br>';"
+  },
+
+  // Others
+  "PHP shebang": {
+    "prefix": "php",
+    "body": "#!/usr/bin/env php"
+  }
+}

@@ -1,0 +1,10 @@
+{
+	"Details and summary tags": {
+		"prefix": "details",
+		"body": [
+			"<details><summary>$1</summary>\n",
+			"$0\n",
+			"</details>"
+		]
+	}
+}
