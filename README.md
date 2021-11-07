@@ -1,6 +1,6 @@
 # Windows Dotfiles
 
-This repository contains the dotfiles that I use to set up a development environment on Windows using the following software:
+This repository contains the dotfiles that I use to set up a development environment on Windows using the following:
 
 - [Visual Studio Code](https://code.visualstudio.com) (VSC), as the main editor
 - [Vim](https://www.vim.org), as the secondary editor
@@ -24,38 +24,28 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
    - `%APPDATA%\mintty\emojis\noto`
    - `%PROGRAMFILES%\Git\usr\share\mintty\emojis\noto`
 
-5. Run the appropriate commands based on the terminal you are using:
-
-   For Git Bash,
+5. Using Git Bash, clone this repository into a `.dotfiles` directory in your home directory:
 
    ```console
    git clone --bare https://github.com/mcecode/windows-dotfiles.git "$HOME/.dotfiles"
+   ```
+
+6. Checkout the dotfiles from the bare repository:
+
+   ```console
    git --git-dir="$HOME/.dotfiles" --work-tree="$HOME" checkout
    ```
 
-   For PowerShell,
-
-   ```console
-   git clone --bare https://github.com/mcecode/windows-dotfiles.git "$Env:USERPROFILE\.dotfiles"
-   git --git-dir="$Env:USERPROFILE\.dotfiles" --work-tree="$Env:USERPROFILE" checkout
-   ```
-
-   For Command Prompt,
-
-   ```console
-   git clone --bare https://github.com/mcecode/windows-dotfiles.git "%USERPROFILE%\.dotfiles"
-   git --git-dir="%USERPROFILE%\.dotfiles" --work-tree="%USERPROFILE%" checkout
-   ```
-
-6. Set `dotfiles status` to hide untracked files:
+7. Reload Git Bash to allow the settings to take into effect.
+8. `%USERPROFILE%\.config\bash\.bashrc` adds the `dotfiles` alias to easily work with the dotfiles bare repository. Using this command, set `dotfiles status` to hide untracked files:
 
    ```console
    dotfiles config --local status.showUntrackedFiles no
    ```
 
-7. In Windows Settings > Update & Security > For developers, apply the setting that allows local PowerShell scripts to run without signing. This will allow you to run `update-extensions.ps1` in the next step.
-8. Run `%USERPROFILE%\.vscode\update-extensions.ps1`. This will install the VSC extensions listed in `%USERPROFILE%\.vscode\extensions.txt`.
-9. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
+9. In Windows Settings > Update & Security > For developers, apply the setting that allows local PowerShell scripts to run without signing. This will enable you to run `update-extensions.ps1` in the next step.
+10. Run `%USERPROFILE%\.vscode\update-extensions.ps1`. This will install the VSC extensions listed in `%USERPROFILE%\.vscode\extensions.txt`.
+11. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
 
 ## Syncing the dotfiles
 
@@ -67,9 +57,11 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
 1. On the machine with the newly installed or uninstalled extensions, run `code --list-extensions > extensions.txt` inside the `%USERPROFILE%\.vscode` directory.
 2. Commit and push `extensions.txt` using the `dotfiles` command.
 3. Pull updates on other machines using the `dotfiles` command.
-4. Run `%USERPROFILE%\.vscode\update-extensions.ps1` to sync VSC extensions on other machines.
+4. On other machines, run `%USERPROFILE%\.vscode\update-extensions.ps1` to sync VSC extensions.
 
 P.S. Yes, I know this is a cumbersome way to update them, but I rarely install or uninstall extensions, so this is fine for me right now.
+
+P.P.S. In hindsight, I think it would have been better if I wrote the update script in Bash rather than PowerShell since these dotfiles promote using Git Bash anyway. At some point, I will probably re-write it in Bash, but for now, I digress.
 
 ## Contributing
 
