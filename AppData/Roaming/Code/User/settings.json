@@ -47,7 +47,9 @@
   "workbench.productIconTheme": "material-product-icons",
   "workbench.colorCustomizations": {
     "[Dark+ Material]": {
-      "editor.snippetTabstopHighlightBackground": "#7575754d"
+      "editor.snippetTabstopHighlightBackground": "#7575754d",
+      "editor.selectionBackground": "#ff572255",
+      "editor.selectionHighlightBackground": "#3f51b540"
     }
   },
   // Files
