@@ -1,0 +1,123 @@
+{
+  // Conditionals
+  "Blocked switch statement": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:key}) {",
+      "\tcase ${2:value}: {",
+      "\t\t$3",
+      "\t\tbreak;",
+      "\t}\n\n\t$0\n",
+      "\tdefault: {$4",
+      "\t\tbreak;",
+      "\t}",
+      "}"
+    ]
+  },
+  "Blocked case statement": {
+    "prefix": "case",
+    "body": "case ${1:value}: {\n\t$0\n\tbreak;\n}"
+  },
+
+  // Functions
+  "Async function": {
+    "prefix": "asfunc", // async function
+    "body": "async function ${1:name}(${2:params}) {\n\t$0\n}"
+  },
+  "IIFE": {
+    "prefix": "iife",
+    "body": "(() => {\n\t$0\n})($1);"
+  },
+
+  // CommonJS require initializations
+  "Default require": {
+    "prefix": "reqdef", // require default
+    "body": "const $0 = require(\"$1\");"
+  },
+  "Destructured require": {
+    "prefix": "reqdes", // require destructure
+    "body": "const { $0 } = require(\"$1\");"
+  },
+
+  // ES6 imports
+  "Default import": {
+    "prefix": "impdef", // import default
+    "body": "import $0 from \"$1\";"
+  },
+
+  // ES6 variable exports
+  "Export constant": {
+    "prefix": "expconst", // export const
+    "body": "export const ${1:name} = $0;"
+  },
+  "Export variable": {
+    "prefix": "explet", // export let
+    "body": "export let ${1:name} = $0;"
+  },
+
+  // ES6 function exports
+  "Export function": {
+    "prefix": "expfunc", // export function
+    "body": "export function ${1:name}(${2:params}) {\n\t$0\n}"
+  },
+  "Export async function": {
+    "prefix": "expasfunc", // export async function
+    "body": "export async function ${1:name}(${2:params}) {\n\t$0\n}"
+  },
+  "Export default function": {
+    "prefix": "expdefunc", // export default function
+    "body": "export default function ${1:name}(${2:params}) {\n\t$0\n}"
+  },
+  "Export default async function": {
+    "prefix": "expdefasfunc", // export default async function
+    "body": "export default async function ${1:name}(${2:params}) {\n\t$0\n}"
+  },
+
+  // ES6 object exports
+  "Export object": {
+    "prefix": "expobj", // export object
+    "body": "export {\n\t$0\n};"
+  },
+  "Export default object": {
+    "prefix": "expdefobj", // export default object
+    "body": "export default {\n\t$0\n};"
+  },
+
+  // DOM manipulation
+  "Create DOM element": {
+    "prefix": "celem", // create element
+    "body": "document.createElement(\"$1\");"
+  },
+  "Get DOM element by tag name": {
+    "prefix": "gelem", // get element
+    "body": "document.querySelector(\"$1\");"
+  },
+  "Get DOM element by class name": {
+    "prefix": "gclass", // get class
+    "body": "document.querySelector(\".$1\");"
+  },
+  "Get DOM element by id": {
+    "prefix": "gid", // get id
+    "body": "document.getElementById(\"$1\");"
+  },
+  "Get all DOM elements with the same tag name": {
+    "prefix": "gaelem", // get all elements
+    "body": "document.querySelectorAll(\"$1\");"
+  },
+  "Get all DOM elements with the same class name": {
+    "prefix": "gaclass", // get all class
+    "body": "document.querySelectorAll(\".$1\");"
+  },
+
+  // Events
+  "Add event listener": {
+    "prefix": "ae", // add event
+    "body": "addEventListener(\"$1\", $2);"
+  },
+
+  // Others
+  "Node shebang": {
+    "prefix": "node",
+    "body": "#!/usr/bin/env node"
+  }
+}
