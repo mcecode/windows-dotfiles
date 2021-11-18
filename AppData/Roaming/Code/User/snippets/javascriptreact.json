@@ -24,6 +24,10 @@
     "prefix": "asfunc", // async function
     "body": "async function ${1:name}(${2:params}) {\n\t$0\n}"
   },
+  "Async IIFE": {
+    "prefix": "asiife", // async IIFE
+    "body": "(async () => {\n\t$0\n})($1);"
+  },
   "IIFE": {
     "prefix": "iife",
     "body": "(() => {\n\t$0\n})($1);"

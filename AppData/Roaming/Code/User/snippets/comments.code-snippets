@@ -2,7 +2,7 @@
   "Single-line todo comment": {
     "prefix": "todo",
     "body": "$LINE_COMMENT TODO: ",
-    "scope": "javascript,json,jsonc,php,scss,shellscript,tex,latex,powershell"
+    "scope": "javascript,json,jsonc,php,scss,shellscript,tex,latex,powershell,javascriptreact"
   },
   "Multi-line todo comment": {
     "prefix": "todo",
@@ -16,7 +16,7 @@
       "$LINE_COMMENT $0",
       "$LINE_COMMENT=================================================="
     ],
-    "scope": "javascript,json,jsonc,php,scss,shellscript,tex,latex,powershell"
+    "scope": "javascript,json,jsonc,php,scss,shellscript,tex,latex,powershell,javascriptreact"
   },
   "Multi-line header comment": {
     "prefix": "header",
