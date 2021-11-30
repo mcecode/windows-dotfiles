@@ -6,10 +6,13 @@ DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dbankier.vscode-quick-select
 DigitalBrainstem.javascript-ejs-support
+Divlo.vscode-styled-jsx-languageserver
+Divlo.vscode-styled-jsx-syntax
 esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 goessner.mdmath
+GraphQL.vscode-graphql
 jock.svg
 kamikillerto.vscode-colorize
 kzvi.pandoc-markdown-preview
