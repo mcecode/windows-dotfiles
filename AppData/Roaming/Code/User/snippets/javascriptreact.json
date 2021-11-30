@@ -1,4 +1,14 @@
 {
+  // styled-jsx
+  "Style JSX": {
+    "prefix": "sjsx", // style jsx
+    "body": "<style jsx>{`\n\t$0\n`}</style>"
+  },
+  "Global style JSX": {
+    "prefix": "sgjsx", // style global jsx
+    "body": "<style jsx global>{`\n\t$0\n`}</style>"
+  },
+
   // Conditionals
   "Blocked switch statement": {
     "prefix": "switch",
