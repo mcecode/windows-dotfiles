@@ -83,6 +83,7 @@
   "intelephense.telemetry.enabled": false,
   "intelephense.trace.server": "verbose",
   "intelephense.completion.insertUseDeclaration": false,
+  "intelephense.environment.phpVersion": "8.1.0",
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.quickSuggestions": {
@@ -306,6 +307,7 @@
     "borderColor : {color}",
     "opacity: 0.5"
   ],
+  "bracket-pair-colorizer-2.depreciation-notice": false,
   // Auto Rename Tag
   "auto-rename-tag.activationOnLanguage": [
     "html",
