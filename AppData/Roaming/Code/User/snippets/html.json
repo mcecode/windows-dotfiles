@@ -55,15 +55,15 @@
   },
   "PHP strict opening tag": {
     "prefix": "$strictopen",
-    "body": "<?php\n\ndeclare (strict_types=1);\n\n$0"
+    "body": "<?php\n\ndeclare(strict_types=1);\n\n$0"
   },
   "PHP strict single-line tags": {
     "prefix": "$strictshort",
-    "body": "<?php declare (strict_types=1); ?>"
+    "body": "<?php declare(strict_types=1); ?>"
   },
   "PHP strict multi-line tags": {
     "prefix": "$strictlong",
-    "body": "<?php\n\ndeclare (strict_types=1);\n\n$0\n\n?>"
+    "body": "<?php\n\ndeclare(strict_types=1);\n\n$0\n\n?>"
   },
 
   // PHP loops

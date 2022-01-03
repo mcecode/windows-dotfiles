@@ -40,6 +40,8 @@
   },
   // TODO: Add magic methods snippets.
 
+  // TODO: Add enums.
+
   // Helpers
   "Extended var dump": {
     "prefix": "dump",
@@ -53,6 +55,10 @@
   "Echo HTML break tag": {
     "prefix": "ebr", // echo br
     "body": "echo '<br>';"
+  },
+  "Echo line break": {
+    "prefix": "elb", // echo br
+    "body": "echo PHP_EOL;"
   },
 
   // Others
