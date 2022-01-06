@@ -66,6 +66,7 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.localEchoLatencyThreshold": -1,
   "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   // Bread Crumbs
   "breadcrumbs.enabled": false,
   // Search
