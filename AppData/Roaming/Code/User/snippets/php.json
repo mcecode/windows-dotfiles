@@ -40,7 +40,21 @@
   },
   // TODO: Add magic methods snippets.
 
-  // TODO: Add enums.
+  // Enums
+  "Enum": {
+    "prefix": "enum",
+    "body": "enum ${1:EnumName} ${2:implements ${3:Interface}}\n{\n\t$0\n}"
+  },
+  "Backed enum": {
+    "prefix": "bnum",
+    "body": "enum ${1:EnumName}${2|: string,: int|} ${3:implements ${4:Interface}}\n{\n\t$0\n}"
+  },
+
+  // Interfaces
+  "Interface": {
+    "prefix": "interface",
+    "body": "interface ${1:InterfaceName} ${2:extends ${3:AnotherInterface}}\n{\n\t$0\n}"
+  },
 
   // Helpers
   "Extended var dump": {
