@@ -161,7 +161,7 @@
   },
   "markdownlint.config": {
     // For settings explanations, see:
-    // https://github.com/mcecode/standards/blob/main/code/tools/node.js/markdownlint.md
+    // https://github.com/mcecode/standards/blob/main/code/tools/nodejs/markdownlint.md
     "MD003": {
       "style": "atx"
     },
@@ -190,6 +190,12 @@
     },
     "MD048": {
       "style": "backtick"
+    },
+    "MD049": {
+      "style": "underscore"
+    },
+    "MD050": {
+      "style": "asterisk"
     }
   },
   // SVG
