@@ -24,6 +24,5 @@ sissel.json-script-tag
 tlahmann.alex-linter
 vangware.dark-plus-material
 vincaslt.highlight-matching-tag
-vomout.latex-syntax
 yzhang.markdown-all-in-one
 znck.grammarly
