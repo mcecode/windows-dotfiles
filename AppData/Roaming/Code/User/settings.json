@@ -204,6 +204,21 @@
       "strings": true
     }
   },
+  // Go
+  "gopls": {
+    "ui.semanticTokens": true,
+    "ui.diagnostic.staticcheck": true
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    }
+  },
 
   //==================================================
   // Extensions
@@ -372,6 +387,12 @@
   // "files.trimTrailingWhitespace": true,
   // "files.trimFinalNewlines": true,
   // "files.insertFinalNewline": true,
+  // "[go]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": true
+  //   }
+  // },
 
   // This is the default option for this setting, it is here to act as a guard
   // when VS Code adds and removes the keybinding toggeable options below it.

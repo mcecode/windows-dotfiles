@@ -12,6 +12,7 @@ esbenp.prettier-vscode
 formulahendry.auto-close-tag
 formulahendry.auto-rename-tag
 goessner.mdmath
+golang.go
 GraphQL.vscode-graphql
 jock.svg
 kamikillerto.vscode-colorize
