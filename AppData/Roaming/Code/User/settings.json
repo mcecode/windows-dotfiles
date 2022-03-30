@@ -96,12 +96,6 @@
   // JavaScript
   "javascript.suggest.autoImports": false,
   "javascript.updateImportsOnFileMove.enabled": "never",
-  // "javascript.inlayHints.enumMemberValues.enabled": true,
-  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
-  // "javascript.inlayHints.parameterNames.enabled": "all",
-  // "javascript.inlayHints.parameterTypes.enabled": true,
-  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
-  // "javascript.inlayHints.variableTypes.enabled": true,
   "[javascript]": {
     "editor.quickSuggestions": {
       "strings": true
@@ -111,12 +105,6 @@
   "typescript.suggest.autoImports": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "typescript.preferences.includePackageJsonAutoImports": "off",
-  // "typescript.inlayHints.enumMemberValues.enabled": true,
-  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
-  // "typescript.inlayHints.parameterNames.enabled": "all",
-  // "typescript.inlayHints.parameterTypes.enabled": true,
-  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
-  // "typescript.inlayHints.variableTypes.enabled": true,
   "[typescript]": {
     "editor.quickSuggestions": {
       "strings": true
