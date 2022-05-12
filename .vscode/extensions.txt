@@ -1,7 +1,6 @@
 aaron-bond.better-comments
 bierner.emojisense
 bmewburn.vscode-intelephense-client
-CoenraadS.bracket-pair-colorizer-2
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 dbankier.vscode-quick-select

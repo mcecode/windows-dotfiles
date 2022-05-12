@@ -31,6 +31,7 @@
   "editor.suggest.insertMode": "insert",
   "editor.snippetSuggestions": "top",
   "editor.unicodeHighlight.includeComments": true,
+  "editor.guides.bracketPairs": "active",
   // Workbench
   "workbench.list.smoothScrolling": true,
   "workbench.panel.opensMaximized": "never",
@@ -47,6 +48,13 @@
   "workbench.colorTheme": "Dark+ Material",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#ff57e8",
+    "editorBracketHighlight.foreground2": "#57ff57",
+    "editorBracketHighlight.foreground3": "#00bfff",
+    "editorBracketHighlight.foreground4": "#ff1491",
+    "editorBracketHighlight.foreground5": "#ff8c00",
+    "editorBracketHighlight.foreground6": "#ffd700",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#fff",
     "[Dark+ Material]": {
       "editor.snippetTabstopHighlightBackground": "#7575754d",
       "editor.selectionBackground": "#ff572255",
@@ -304,20 +312,6 @@
     "**/bower_components/**",
     "**/vendor/**"
   ],
-  // Bracket Pair Colorizer 2
-  "bracket-pair-colorizer-2.excludedLanguages": [
-    "plaintext",
-    "markdown",
-    "html"
-  ],
-  "bracket-pair-colorizer-2.colors": ["#ff57e8", "#57ff57", "#57fff2"],
-  "bracket-pair-colorizer-2.scopeLineCSS": [
-    "borderStyle : solid",
-    "borderWidth : 3px",
-    "borderColor : {color}",
-    "opacity: 0.5"
-  ],
-  "bracket-pair-colorizer-2.depreciation-notice": false,
   // Auto Rename Tag
   "auto-rename-tag.activationOnLanguage": [
     "html",
