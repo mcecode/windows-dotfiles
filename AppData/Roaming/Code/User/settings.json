@@ -233,33 +233,13 @@
   //==================================================
 
   // Grammarly
-  "grammarly.autoActivate": false,
-  "grammarly.domain": "casual",
-  "grammarly.showExamples": true,
-  "grammarly.showUsernameInStatusBar": false,
-  "grammarly.diagnostics": {
-    "[markdown]": {
-      "ignore": ["inlineCode", "code", "html"]
-    }
-  },
-  "grammarly.userWords": [
-    "polyfilled",
-    "unpolyfilled",
-
-    "transpiled",
-    "untranspiled",
-
-    "formatter",
-    "formatters",
-
-    "linters",
-    "lints",
-
-    "webpack",
-    "preconnect",
-    "typometric",
-    "mcecode"
-  ],
+  "grammarly.config.documentDialect": "american",
+  "grammarly.config.suggestions.ConjunctionAtStartOfSentence": true,
+  "grammarly.config.suggestions.InformalPronounsAcademic": true,
+  "grammarly.config.suggestions.OxfordComma": true,
+  "grammarly.config.suggestions.PrepositionAtTheEndOfSentence": true,
+  "grammarly.config.suggestions.UnnecessaryEllipses": true,
+  "grammarly.patterns": ["*.{md,txt}"],
   // Better Comments
   "better-comments.tags": [
     {
