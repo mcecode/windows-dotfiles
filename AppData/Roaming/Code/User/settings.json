@@ -239,7 +239,8 @@
   "grammarly.config.suggestions.OxfordComma": true,
   "grammarly.config.suggestions.PrepositionAtTheEndOfSentence": true,
   "grammarly.config.suggestions.UnnecessaryEllipses": true,
-  "grammarly.patterns": ["*.{md,txt}"],
+  "grammarly.startTextCheckInPausedState": true,
+  "grammarly.files.include": ["**/*.md", "**/*.txt"],
   // Better Comments
   "better-comments.tags": [
     {
