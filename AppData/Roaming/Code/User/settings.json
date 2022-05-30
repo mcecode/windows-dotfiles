@@ -171,18 +171,12 @@
     "MD024": {
       "siblings_only": true
     },
-    "MD025": {
-      "front_matter_title": ""
-    },
     "MD029": {
       "style": "ordered"
     },
     "MD033": false,
     "MD035": {
       "style": "---"
-    },
-    "MD041": {
-      "front_matter_title": ""
     },
     "MD048": {
       "style": "backtick"
