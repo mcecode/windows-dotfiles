@@ -351,7 +351,8 @@
   // "terminal.integrated.cwd": "",
   // "editor.formatOnSave": true,
   // "editor.codeActionsOnSave": {
-  //   "source.fixAll.markdownlint": true
+  //   "source.fixAll.markdownlint": true,
+  //   "source.organizeImports": true
   // },
   // "files.trimTrailingWhitespace": true,
   // "files.trimFinalNewlines": true,
