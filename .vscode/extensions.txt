@@ -13,6 +13,7 @@ formulahendry.auto-rename-tag
 goessner.mdmath
 golang.go
 GraphQL.vscode-graphql
+jeffersonlicet.snipped
 jock.svg
 kamikillerto.vscode-colorize
 kzvi.pandoc-markdown-preview
