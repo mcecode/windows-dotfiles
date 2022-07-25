@@ -16,7 +16,7 @@ case "$1" in
     get_installed_extensions
     echo "$installed_extensions" > "$extensions_file"
   ;;
-  "install")
+  "sync")
     get_installed_extensions
 
     if [ -f "$extensions_file" ]; then

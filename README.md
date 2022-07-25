@@ -46,7 +46,7 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
 9. `%USERPROFILE%\.config\bash\.bashrc` also adds the `uxt` alias to easily update VSC extensions. Using this command, sync all VSC extensions in the new system:
 
    ```console
-   uxt install
+   uxt sync
    ```
 
 10. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
@@ -61,7 +61,7 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
 1. On the machine with the newly installed or uninstalled extensions, run `uxt list` to update `%USERPROFILE%\.vscode\extensions.txt` with the new set of extensions.
 2. Commit and push `extensions.txt` using the `dotfiles` command.
 3. Pull updates on other machines using the `dotfiles` command.
-4. On other machines, run `uxt install` to sync the VSC extensions.
+4. On other machines, run `uxt sync` to sync the VSC extensions.
 
 ## Contributing
 
