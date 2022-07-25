@@ -43,9 +43,13 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
    dotfiles config --local status.showUntrackedFiles no
    ```
 
-9. In Windows Settings > Update & Security > For developers, apply the setting that allows local PowerShell scripts to run without signing. This will enable you to run `update-extensions.ps1` in the next step.
-10. Run `%USERPROFILE%\.vscode\update-extensions.ps1`. This will install the VSC extensions listed in `%USERPROFILE%\.vscode\extensions.txt`.
-11. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
+9. `%USERPROFILE%\.config\bash\.bashrc` also adds the `uxt` alias to easily update VSC extensions. Using this command, sync all VSC extensions in the new system:
+
+   ```console
+   uxt install
+   ```
+
+10. Put any additional Bash settings like machine-specific variables and Git settings like user credentials in `%USERPROFILE%\.config\local\.bashrc` and `%USERPROFILE%\.config\local\.gitconfig`, respectively.
 
 ## Syncing the dotfiles
 
@@ -54,14 +58,10 @@ I manage these files using Git [bare repositories](https://git-scm.com/docs/gitg
 
 ## Syncing Visual Studio Code extensions
 
-1. On the machine with the newly installed or uninstalled extensions, run `code --list-extensions > extensions.txt` inside the `%USERPROFILE%\.vscode` directory.
+1. On the machine with the newly installed or uninstalled extensions, run `uxt list` to update `%USERPROFILE%\.vscode\extensions.txt` with the new set of extensions.
 2. Commit and push `extensions.txt` using the `dotfiles` command.
 3. Pull updates on other machines using the `dotfiles` command.
-4. On other machines, run `%USERPROFILE%\.vscode\update-extensions.ps1` to sync VSC extensions.
-
-P.S. Yes, I know this is a cumbersome way to update them, but I rarely install or uninstall extensions, so this is fine for me right now.
-
-P.P.S. In hindsight, I think it would have been better if I wrote the update script in Bash rather than PowerShell since these dotfiles promote using Git Bash anyway. At some point, I will probably re-write it in Bash, but for now, I digress.
+4. On other machines, run `uxt install` to sync the VSC extensions.
 
 ## Contributing
 
