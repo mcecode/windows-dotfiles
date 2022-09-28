@@ -1,0 +1,6 @@
+{
+  "JSON struct tags": {
+    "prefix": "j`",
+    "body": "`json:\"$0\"`"
+  }
+}
