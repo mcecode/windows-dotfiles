@@ -13,6 +13,7 @@
   // Explorer
   "explorer.confirmDragAndDrop": false,
   "explorer.autoReveal": "focusNoScroll",
+  "explorer.incrementalNaming": "disabled",
   // Editor
   "editor.colorDecorators": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
