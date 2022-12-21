@@ -221,6 +221,13 @@
       "strings": true
     }
   },
+  // JSON
+  "json.schemas": [
+    {
+      "fileMatch": ["composer.json"],
+      "url": "https://getcomposer.org/schema.json"
+    }
+  ],
 
   //==================================================
   // Extensions
