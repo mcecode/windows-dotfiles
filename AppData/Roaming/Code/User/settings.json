@@ -18,7 +18,7 @@
   "editor.colorDecorators": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss05', 'ss07', 'zero'",
+  "editor.fontLigatures": "'cv02', 'cv10', 'cv14', 'cv21', 'cv25', 'cv26', 'cv28', 'cv30', 'cv32', 'ss01', 'ss02', 'ss03', 'ss05', 'ss07', 'zero'",
   "editor.fontWeight": "500",
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
