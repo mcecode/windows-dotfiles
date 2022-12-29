@@ -416,7 +416,7 @@
   // Show SVG file as an image
   {
     "key": "ctrl+k v",
-    "command": "_svg.showSvg",
+    "command": "svg.showSvg",
     "when": "!notebookEditorFocused && editorLangId == 'svg'"
   },
   // Minify SVG file
