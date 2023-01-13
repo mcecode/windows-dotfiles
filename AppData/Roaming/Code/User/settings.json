@@ -68,7 +68,8 @@
   "files.autoGuessEncoding": true,
   "files.eol": "\n",
   "files.associations": {
-    ".minttyrc": "properties"
+    ".minttyrc": "properties",
+    "*.liquid": "html"
   },
   // Terminal
   "terminal.integrated.defaultProfile.windows": "Git Bash",
