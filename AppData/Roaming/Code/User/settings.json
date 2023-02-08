@@ -345,7 +345,7 @@
   "tableformatter.common.centerAlignedHeader": false,
   "tableformatter.markdown.tableEdgesType": "Normal",
   // ESLint
-  "eslint.alwaysShowStatus": true,
+  "eslint.problems.shortenToSingleLine": true,
   // Alex
   "alex-linter.noBinary": true,
   "alex-linter.strategy": "user",
