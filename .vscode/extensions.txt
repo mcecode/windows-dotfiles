@@ -1,4 +1,5 @@
 aaron-bond.better-comments
+astro-build.astro-vscode
 bierner.emojisense
 bmewburn.vscode-intelephense-client
 DavidAnson.vscode-markdownlint
@@ -13,6 +14,8 @@ formulahendry.auto-rename-tag
 goessner.mdmath
 golang.go
 GraphQL.vscode-graphql
+GraphQL.vscode-graphql-execution
+GraphQL.vscode-graphql-syntax
 jeffersonlicet.snipped
 jock.svg
 kamikillerto.vscode-colorize
