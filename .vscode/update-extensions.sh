@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exec_dir=$(dirname $(realpath "$0"))
+exec_dir="$(dirname "$(realpath "$0")")"
 extensions_file="$exec_dir/extensions.txt"
 
 get_installed_extensions() {

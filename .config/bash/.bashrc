@@ -20,7 +20,7 @@ GIT_PS1_SHOWUPSTREAM="auto verbose"
 alias pls="ls -AF --group-directories-first --color=always"
 alias dotfiles="git --git-dir=\"$HOME/.dotfiles\" --work-tree=\"$HOME\""
 # Update extensions
-alias uxt="bash $HOME/.vscode/update-extensions.sh"
+alias uxt="bash \"$HOME/.vscode/update-extensions.sh\""
 
 #==================================================
 # Functions
