@@ -85,6 +85,8 @@
   "extensions.ignoreRecommendations": true,
   // Security
   "security.workspace.trust.enabled": false,
+  // Git
+  "git.openRepositoryInParentFolders": "never",
 
   //==================================================
   // Language specific built-ins and extensions
