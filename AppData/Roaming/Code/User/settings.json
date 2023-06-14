@@ -26,12 +26,12 @@
   "editor.columnSelection": false,
   "editor.tabCompletion": "off",
   "editor.quickSuggestionsDelay": 0,
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestSelection": "first",
   "editor.suggest.insertMode": "insert",
   "editor.snippetSuggestions": "top",
   "editor.unicodeHighlight.includeComments": true,
   "editor.guides.bracketPairs": "active",
+  "editor.linkedEditing": true,
   // Workbench
   "workbench.list.smoothScrolling": true,
   "workbench.panel.opensMaximized": "never",
@@ -296,37 +296,6 @@
     "**/node_modules/**",
     "**/bower_components/**",
     "**/vendor/**"
-  ],
-  // Auto Rename Tag
-  "auto-rename-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "markdown",
-    "vue",
-    "erb"
-  ],
-  // Auto Close Tag
-  "auto-close-tag.enableAutoCloseSelfClosingTag": false,
-  "auto-close-tag.activationOnLanguage": [
-    "html",
-    "xml",
-    "php",
-    "blade",
-    "ejs",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "markdown",
-    "vue",
-    "erb"
   ],
   // Highlight Matching Tag
   "highlight-matching-tag.showPath": false,
