@@ -18,6 +18,7 @@ jeffersonlicet.snipped
 jock.svg
 kamikillerto.vscode-colorize
 kzvi.pandoc-markdown-preview
+lpubsppop01.vscode-auto-timestamp
 mrmlnc.vscode-scss
 PKief.material-icon-theme
 PKief.material-product-icons
