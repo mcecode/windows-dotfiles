@@ -320,10 +320,10 @@
   "alex-linter.noBinary": true,
   "alex-linter.strategy": "user",
   // Auto Time Stamp
-  "lpubsppop01.autoTimeStamp.birthTimeStart": "(dateCreated) *: ",
-  "lpubsppop01.autoTimeStamp.modifiedTimeStart": "(dateUpdated) *: ",
-  "lpubsppop01.autoTimeStamp.momentFormat": "YYYY-MM-DD",
-  "lpubsppop01.autoTimeStamp.utc": true,
+  "lpubsppop01.autoTimeStamp.birthTimeStart": "^(dateCreated) *: ",
+  "lpubsppop01.autoTimeStamp.modifiedTimeStart": "^(dateUpdated) *: ",
+  "lpubsppop01.autoTimeStamp.luxonFormat": "yyyy/LL/dd",
+  "lpubsppop01.autoTimeStamp.luxonTimezone": "utc",
 
   //==================================================
   // Others
